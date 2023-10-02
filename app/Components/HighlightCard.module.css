@@ -1,0 +1,124 @@
+.highlightCardContainer{
+    background-color: white;
+    border-radius: 20px;
+    width: 90%;
+    margin:2vh auto;
+    color: black;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 3vh;
+}
+.imgContainer{
+    max-width: 10vh;
+    max-height: 10vh;
+    overflow: hidden;
+    border-radius: 50%;
+
+}
+.imgContainer img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+.infoContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+    width: 100%;
+}
+.highlightTitleContainer{
+    font-weight: bolder;
+    font-size: 1.1rem;
+}
+.descriptionContainer{
+
+}
+.challengesContainer{
+display: flex;
+    flex-direction: row;
+    gap: 1vh;
+}
+.challengeItemContainer{
+    border: solid 1px black;
+    border-radius: 7px;
+    padding: 2px 1px;
+    background-color: #ceecfe;
+    font-size: 0.8rem;
+    height: min-content;
+}
+.skillsUtilizedContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 1vh;
+}
+.skillItemContainer{
+    border: solid 1px black;
+    border-radius: 7px;
+    padding: 2px 1px;
+    background-color: #cefecf;
+    font-size: 0.8rem;
+}
+
+
+.linksContainer{
+    width: 10%;
+    gap: 2vh;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-around;
+    align-items: center;
+}
+.linkItem{
+font-size: 2rem;
+}
+
+
+
+@media only screen and (max-width: 700px) {
+    .highlightCardContainer{
+    flex-direction: column;
+        text-align: center;
+
+    }
+    .imgContainer{
+
+
+    }
+    .imgContainer img{
+
+    }
+    .infoContainer{
+
+    }
+    .highlightTitleContainer{
+
+    }
+    .descriptionContainer{
+
+    }
+    .challengesContainer{
+        flex-direction: column;
+    }
+    .challengeItemContainer{
+
+    }
+    .skillsUtilizedContainer{
+        flex-direction: row;
+        overflow-x: scroll;
+
+    }
+    .skillItemContainer{
+
+    }
+
+
+    .linksContainer{
+        flex-direction: row;
+    }
+    .linkItem{
+
+    }
+
+}

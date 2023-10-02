@@ -1,95 +1,72 @@
-import Image from 'next/image'
 import styles from './page.module.css'
+import {BsSearchHeart} from "react-icons/bs";
+import {AiFillFilePpt, AiFillLinkedin} from "react-icons/ai";
+import {FaGithub} from "react-icons/fa";
+import {mockData} from "@/app/mockData";
+import HighlightCard from "@/app/Components/HighlightCard";
 
 export default function Home() {
-  return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    return (
+        <>
+            <div className={styles.title}>
+                <h1>Am i the right person for the job ? </h1>
+                <p>Are you wondering if I'm the right fit for your team?</p>
+                <p>In my quest for the perfect job, I faced a challenge. No matter how much I learned and improved, recruiters couldn't gauge my technical prowess.</p>
+                <p>Enter this solution! Just search for a technology or skill you're interested in, and I'll show you if I've got it. Sometimes, I'll even link a commit or a PDF file that dives deep into the subject.</p>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+            </div>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
+            <div className={styles.contactMeContainer}>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
+                <div className={styles.contactMeItem}>
+                    <a href="" target={'_blank'}>
+                        <AiFillFilePpt/> {/* THE PDF SYMBOL*/}
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+                    </a>
+                </div>
+
+                <div className={styles.contactMeItem}>
+
+                    <a href="https://www.linkedin.com/in/roy-ivri/" target={'_blank'}>
+                        <AiFillLinkedin/>
+
+                    </a>
+                </div>
+
+
+                <div className={styles.contactMeItem}>
+                    <a href="https://github.com/roie123" target={'_blank'}>
+                        <FaGithub/>
+
+                    </a>
+                </div>
+
+
+            </div>
+
+
+            <div className={styles.searchComponentContainer}>
+
+
+                <div className={styles.SearchBar}>
+                    <p>Search</p>
+                    <BsSearchHeart/>
+                </div>
+
+
+            </div>
+
+
+
+            <div>
+                {mockData.map((highlight,index)=>  
+                    (
+                        <HighlightCard highlight={highlight}  key={index}/>
+                    )
+                )}
+            </div>
+
+        </>
+    );
 }
