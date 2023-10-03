@@ -101,9 +101,9 @@ return(
         <div className={styles.linkItem}>
             <a href="https://github.com/roie123" target={'_blank'}>
                 <AiFillEye/>
-                <span>show commit/project</span>
 
             </a>
+
 
         </div>
 

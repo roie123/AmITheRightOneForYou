@@ -55,7 +55,15 @@
 
 
 }
-
+.searchBarInput{
+    width: 100%;
+    background-color: inherit;
+    outline: none;
+    border: none;
+}
+.searchBarInput::placeholder{
+    color: white;
+}
 @media only screen and (max-width: 600px) {
     .title {
         text-align: center;

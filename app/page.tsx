@@ -50,7 +50,8 @@ export default function Home() {
 
 
                 <div className={styles.SearchBar}>
-                    <p>Search</p>
+                    <input type="text" className={styles.searchBarInput} placeholder={'Search...'} />
+                    {/*<p>Search</p>*/}
                     <BsSearchHeart/>
                 </div>
 
