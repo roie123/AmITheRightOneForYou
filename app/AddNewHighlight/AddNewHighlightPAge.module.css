@@ -1,0 +1,65 @@
+.addNewHighlightPageContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 2vh;
+}
+
+.newHighlightTitle {
+
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    padding: 2vh;
+    border-radius: 20px;
+    background-color: white;
+    margin: 5vh auto;
+
+}
+
+.highlightInput ,.highlightInputDesc {
+    min-width: 40vw;
+
+    background-color: white;
+    outline: none;
+    border: grey solid 2px;
+    border-radius: 5px;
+    height: 5vh;
+    color: black;
+}
+.highlightInputDesc{
+height: 15vh;
+}
+
+.addHighlightButtons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.addHighlightSingleButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8vh;
+    height: 8vh;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    font-size: 3rem;
+    background-color: white;
+    color: black;
+
+}
+
+
+.highlightInput::placeholder {
+    color: black;
+    padding-left: 1vh;
+}
